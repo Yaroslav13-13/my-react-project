@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.icon {
+  color: teal;
+  margin-right: 8px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
