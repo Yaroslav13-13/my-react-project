@@ -5,12 +5,22 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #090909;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
 }
 
 a {
@@ -28,6 +38,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 h1 {
