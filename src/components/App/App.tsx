@@ -1,6 +1,7 @@
 import Mailbox from "../Mailbox/Mailbox";
 import Product from "../Product/Product";
 import Book from "../Book/Book";
+import Button from "../Button/Button";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       />
       <Mailbox username="Bob" messages={[]} />
       <Book />
+      <Button />
     </>
   );
 }
