@@ -1,4 +1,6 @@
+import Mailbox from "../Mailbox/Mailbox";
 import Product from "../Product/Product";
+import Book from "../Book/Book";
 
 export default function App() {
   return (
@@ -14,6 +16,12 @@ export default function App() {
         imgUrl="https://media.istockphoto.com/id/495204032/photo/fresh-tasty-burger.jpg?s=612x612&w=0&k=20&c=k6X_gSHlo-WdKsqTnfBjoEbjdhrlz6RNhUs23ivpIxk="
         price={15.99}
       />
+      <Mailbox
+        username="Silvie"
+        messages={["React", "Re: React", "Re:Re: React"]}
+      />
+      <Mailbox username="Bob" messages={[]} />
+      <Book />
     </>
   );
 }
