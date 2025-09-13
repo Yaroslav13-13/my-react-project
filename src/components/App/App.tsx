@@ -2,8 +2,18 @@ import Mailbox from "../Mailbox/Mailbox";
 import Product from "../Product/Product";
 import Book from "../Book/Book";
 import Button from "../Button/Button";
+import { Click } from "../Button/Button";
+import { useState } from "react";
+import Xy from "../X&Y/Xy";
+import Form from "../Form/Form";
+// import Form2 from "../Form/Form";
 
 export default function App() {
+  const [click, setClick] = useState(0);
+  const handleClick = () => {
+    setClick((prevClick) => prevClick + 1);
+  };
+
   return (
     <>
       <h1>Best selling</h1>
@@ -24,6 +34,10 @@ export default function App() {
       <Mailbox username="Bob" messages={[]} />
       <Book />
       <Button />
+      <Click value={click} onUpdate={handleClick} />
+      <Click value={click} onUpdate={handleClick} />
+      <Xy />
+      <Form />
     </>
   );
 }

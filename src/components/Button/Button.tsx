@@ -1,12 +1,5 @@
-// export default function Button() {
-//   const handleClick = () => {
-//     console.log("I'm a button!");
-//   };
-
 import type React from "react";
-
-//   return <button onClick={handleClick}>Click me!</button>;
-// }
+import { useState } from "react";
 
 export default function Button() {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -18,4 +11,13 @@ export default function Button() {
       <button onClick={event}>Click me!</button>;
     </>
   );
+}
+
+interface ClickProps {
+  value: number;
+  onUpdate: () => void;
+}
+
+export function Click({ value, onUpdate }: ClickProps) {
+  return <button onClick={onUpdate}>CLICK:{value}</button>;
 }
